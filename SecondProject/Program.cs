@@ -5,15 +5,13 @@ class Program
 {
     public static void Main(string[] args)
     {
-        // Basic Built in Data Types - Alias
-        /*
-         int = System.Int32
-         bool = System.Boolean
-         float = System.Single
-         string = System.String
-         char = System.char
-         */
+        System.Console.WriteLine("Hello World");
+    }
 
+    public static int MathChallenge(int fahrenheit)
+    {
+        int celcius = (fahrenheit * 32) * (5 / 9);
+        return celcius;
     }
 }
 
