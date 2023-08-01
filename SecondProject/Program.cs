@@ -5,7 +5,15 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello World");
+        // Basic Built in Data Types - Alias
+        /*
+         int = System.Int32
+         bool = System.Boolean
+         float = System.Single
+         string = System.String
+         char = System.char
+         */
+
     }
 }
 
