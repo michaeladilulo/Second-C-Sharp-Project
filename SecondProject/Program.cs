@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Text;
 
 class Program
 {
@@ -8,10 +9,15 @@ class Program
         System.Console.WriteLine("Hello World");
     }
 
-    public static int MathChallenge(int fahrenheit)
+    public static void StringBuilderMethod()
     {
-        int celcius = (fahrenheit * 32) * (5 / 9);
-        return celcius;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.Append("Hello World");
+        for (int i = 0; i < 4; i++)
+        {
+            stringBuilder.Append("nice to see you");
+        }
+        string s = stringBuilder.ToString();
+        System.Diagnostics.Debug.WriteLine(s);
     }
 }
-
