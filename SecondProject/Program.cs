@@ -6,18 +6,19 @@ class Program
 {
     public static void Main(string[] args)
     {
-        System.Console.WriteLine("Hello World");
+        Person p = new Person();
+        p.Name = "Old Name";
+        ChangeReferenceType(p);
+        System.Diagnostics.Debug.WriteLine(p.Name);
     }
 
-    public static void StringBuilderMethod()
+   public class Person
     {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.Append("Hello World");
-        for (int i = 0; i < 4; i++)
-        {
-            stringBuilder.Append("nice to see you");
-        }
-        string s = stringBuilder.ToString();
-        System.Diagnostics.Debug.WriteLine(s);
+        public string ?Name;
+    }
+
+    static void ChangeReferenceType(Person person)
+    {
+        person.Name = "New Name";
     }
 }
