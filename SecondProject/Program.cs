@@ -6,10 +6,10 @@ class Program
 {
     public static void Main(string[] args)
     {
-        TimeSpan timeSpan = new TimeSpan(1, 2, 3);
-        Console.WriteLine(timeSpan.Hours); // 1
-        Console.WriteLine(timeSpan.Minutes); // 2
-        Console.WriteLine(timeSpan.Seconds); // 3
+        Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy"));
+        Console.WriteLine(DateTime.Now.ToString("dddd, dd MMMM yyyy"));
+        Console.WriteLine(DateTime.Now.ToString("dddd, dd MMMM yyyy hh:mm tt"));
+        Console.WriteLine(DateTime.Now.ToString("dddd, dd MMMM yy HH:mm:ss"));
     }
         
 }
