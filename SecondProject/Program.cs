@@ -6,11 +6,10 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(DateTime.UtcNow);
-
-        // Initialize below
-        DateTime date = new DateTime();
-        Console.WriteLine(date);
+        TimeSpan timeSpan = new TimeSpan(1, 2, 3);
+        Console.WriteLine(timeSpan.Hours); // 1
+        Console.WriteLine(timeSpan.Minutes); // 2
+        Console.WriteLine(timeSpan.Seconds); // 3
     }
         
 }
