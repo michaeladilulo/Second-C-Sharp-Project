@@ -6,19 +6,11 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Person p = new Person();
-        p.Name = "Old Name";
-        ChangeReferenceType(p);
-        System.Diagnostics.Debug.WriteLine(p.Name);
-    }
+        Console.WriteLine(DateTime.UtcNow);
 
-   public class Person
-    {
-        public string ?Name;
+        // Initialize below
+        DateTime date = new DateTime();
+        Console.WriteLine(date);
     }
-
-    static void ChangeReferenceType(Person person)
-    {
-        person.Name = "New Name";
-    }
+        
 }
