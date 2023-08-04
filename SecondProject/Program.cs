@@ -8,17 +8,15 @@ class Program
     {
         int num = 4;
 
-        if(num == 4)
+        switch (num)
         {
-            Console.WriteLine("Hello World");
-        }
-        else if(num == 5)
-        {
-            Console.WriteLine("This is Five");
-        }
-        else
-        {
-            Console.WriteLine("This is the end");
+            case 4:
+                Console.WriteLine("Run this code");
+                break;
+
+            case 5:
+                Console.WriteLine("Don't run this code");
+                break;
         }
     }
         
