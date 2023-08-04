@@ -6,17 +6,9 @@ class Program
 {
     public static void Main(string[] args)
     {
-        int num = 4;
-
-        switch (num)
+        for(int i = 0; i < 4; i++)
         {
-            case 4:
-                Console.WriteLine("Run this code");
-                break;
-
-            case 5:
-                Console.WriteLine("Don't run this code");
-                break;
+            Console.WriteLine("Hello World");
         }
     }
         
